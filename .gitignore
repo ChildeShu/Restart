@@ -1,0 +1,19 @@
+# Gradle 构建目录
+build/
+.gradle/
+
+# IntelliJ Platform 本地缓存（sandbox、插件依赖下载）
+.intellijPlatform/
+
+# IDE 工程文件
+.idea/
+*.iml
+out/
+
+# 构建 / 运行日志
+*.log
+build_log.txt
+
+# 临时调试脚本
+.fix_*.py
+.*.py

@@ -1,0 +1,55 @@
+<idea-plugin>
+    <name>Restart</name>
+    <id>com.childeshu.restart</id>
+    <!-- Additional Info：供应商主页 / 支持邮箱，发布后由 Marketplace 附加信息区展示 -->
+    <vendor email="jiansite@qq.com" url="https://user.qzone.qq.com/1340582309/infocenter">锦舒</vendor>
+    <idea-version since-build="231" until-build="243.*"/>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <description>
+        Restart can restart your IDE instantly without closing the running application.
+        &lt;br/&gt;
+        &lt;em&gt;Click File menu and select Restart or use Ctrl + Alt + R.&lt;/em&gt;&lt;br/&gt;
+        &lt;br/&gt;
+        Welcome to reward.
+        &lt;br /&gt;
+        &lt;a title="Welcome to reward."
+        href="https://user.qzone.qq.com/1340582309/infocenter"&gt;
+        &lt;img border="0"
+        src="https://raw.githubusercontent.com/ChildeShu/Restart/main/assets/qr.png"
+        width="196" height="196"&gt;
+        &lt;/a&gt;
+        &lt;br/&gt;
+        &lt;b&gt;Feedback &amp; Reviews&lt;/b&gt;&lt;br/&gt;
+        Found a bug or have an idea? Please leave a review on the JetBrains Marketplace plugin page.
+        &lt;br/&gt;
+        遇到问题或有功能建议，欢迎在 Marketplace 插件页留下评价。&lt;br/&gt;
+        &lt;br/&gt;
+        &lt;b&gt;Additional Information&lt;/b&gt;&lt;br/&gt;
+        Plugin ID: com.childeshu.restart&lt;br/&gt;
+        Default shortcut: Ctrl + Alt + R&lt;br/&gt;
+        Compatible with: IntelliJ IDEA 2023.1 - 2024.3 (build 231 - 243.*)&lt;br/&gt;
+    </description>
+
+    <!-- What's New：IDEA 插件详情页与 Marketplace 版本说明均读取此节点 -->
+    <change-notes><![CDATA[
+        <b>1.0.0</b> (2026-11-18) - Initial release / 首个版本
+        <ul>
+            <li>Restart the IDE instantly from the File menu (placed right before Exit).
+                在 File 菜单新增 Restart（位于 Exit 之前），一键立即重启 IDE。</li>
+            <li>Keyboard shortcut Ctrl + Alt + R in the $default keymap.
+                默认快捷键 Ctrl + Alt + R。</li>
+            <li>No configuration and no extra windows: uses the native platform restart API.
+                无需配置，调用平台原生重启能力，不产生额外窗口或残留进程。</li>
+        </ul>
+    ]]></change-notes>
+
+    <actions>
+        <action id="Restart" class="com.childeshu.restart.Restart"
+                icon="/icons/restart.svg"
+                text="Restart" description="Restart">
+            <add-to-group group-id="FileMenu" anchor="before" relative-to-action="Exit"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt R"/>
+        </action>
+    </actions>
+</idea-plugin>
