@@ -56,6 +56,12 @@ tasks {
     withType<JavaCompile> {
         options.encoding = "UTF-8"
     }
+    // 2.2.1 给 untilBuild 设了 convention(构建平台版本 241.*)，
+    // set(null) 会被 convention 兜回；必须先 unsetConvention 再清空
+    named<org.jetbrains.intellij.platform.gradle.tasks.PatchPluginXmlTask>("patchPluginXml") {
+        untilBuild.unsetConvention()
+        untilBuild.set(null as String?)
+    }
     buildPlugin {
         archiveBaseName = "Restar"
     }
