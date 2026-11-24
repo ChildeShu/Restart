@@ -37,6 +37,7 @@ intellijPlatform {
         }
         ideaVersion {
             sinceBuild = "231"
+            untilBuild = null
         }
     }
     // 插件没有自定义设置项，跳过 searchable options 任务，
