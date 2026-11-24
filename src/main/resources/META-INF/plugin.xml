@@ -3,7 +3,7 @@
     <id>com.childeshu.restart</id>
     <!-- Additional Info：供应商主页 / 支持邮箱，发布后由 Marketplace 附加信息区展示 -->
     <vendor email="jiansite@qq.com" url="https://user.qzone.qq.com/1340582309/infocenter">锦舒</vendor>
-    <idea-version since-build="231" until-build="243.*"/>
+    <idea-version since-build="231"/>
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
     <description>
@@ -17,7 +17,7 @@
         href="https://user.qzone.qq.com/1340582309/infocenter"&gt;
         &lt;img border="0"
         src="https://raw.githubusercontent.com/ChildeShu/Restart/main/assets/qr.png"
-        width="196" height="196"&gt;
+        width="180" height="176"&gt;
         &lt;/a&gt;
         &lt;br/&gt;
         &lt;b&gt;Feedback &amp; Reviews&lt;/b&gt;&lt;br/&gt;
@@ -28,7 +28,7 @@
         &lt;b&gt;Additional Information&lt;/b&gt;&lt;br/&gt;
         Plugin ID: com.childeshu.restart&lt;br/&gt;
         Default shortcut: Ctrl + Alt + R&lt;br/&gt;
-        Compatible with: IntelliJ IDEA 2023.1 - 2024.3 (build 231 - 243.*)&lt;br/&gt;
+        Compatible with: all IntelliJ Platform IDEs 2023.1+ (build 231+), including IntelliJ IDEA, WebStorm, DataGrip and more&lt;br/&gt;
     </description>
 
     <!-- What's New：IDEA 插件详情页与 Marketplace 版本说明均读取此节点 -->
