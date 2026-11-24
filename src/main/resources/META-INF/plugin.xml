@@ -37,8 +37,6 @@
         <ul>
             <li>Open-ended compatibility: works with all current and future IntelliJ Platform IDEs and builds (no upper version bound). Includes IntelliJ IDEA, WebStorm, DataGrip, PyCharm, Android Studio, CLion, GoLand, Rider and more.
                 放开版本上限：兼容所有当前及未来的 IntelliJ 平台 IDE 与版本（无上限），含 IntelliJ IDEA、WebStorm、DataGrip、PyCharm、Android Studio、CLion、GoLand、Rider 等。</li>
-            <li>Reward QR code resized to 180x176 for a cleaner plugin page.
-                打赏二维码缩小为 180x176，页面更整洁。</li>
         </ul>
         <b>1.0.0</b> (2026-11-18) - Initial release / 首个版本
         <ul>
